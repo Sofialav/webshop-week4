@@ -1,10 +1,12 @@
 import { combineReducers } from "redux";
+import { categoryReducer } from "./categories/categoryReducers";
 import productsReducer from "./products/productsReducer";
 
 export default combineReducers({
   havingFun: havingFunReducer,
-  products: productsReducer
-});
+  categories: categoryReducer,
+   products: productsReducer
+  });
 
 function havingFunReducer(state = "yes", action) {
   switch (action.type) {

@@ -184,19 +184,23 @@
   "categories": [
     {
       "id": 1,
-      "name": "Romance"
+      "name": "Romance",
+      "imageUrl": "https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
     },
     {
       "id": 2,
-      "name": "Thriller"
+      "name": "Thriller",
+      "imageUrl": "https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
     },
     {
       "id": 3,
-      "name": "Horror"
+      "name": "Horror",
+      "imageUrl": "https://images.unsplash.com/photo-1571459882268-fa847595cb77?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
     },
     {
       "id": 4,
-      "name": "Non-fiction"
+      "name": "Non-fiction",
+      "imageUrl": "https://images.unsplash.com/photo-1510172951991-856a654063f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
     }
   ]
 }
