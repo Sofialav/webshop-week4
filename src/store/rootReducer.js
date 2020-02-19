@@ -1,7 +1,9 @@
 import { combineReducers } from "redux";
+import { categoryReducer } from "./categories/categoryReducers";
 
 export default combineReducers({
-  havingFun: havingFunReducer
+  havingFun: havingFunReducer,
+  categories: categoryReducer
 });
 
 function havingFunReducer(state = "yes", action) {
