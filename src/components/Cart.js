@@ -1,10 +1,22 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { addToCart } from "../store/products/productsActions";
+import { removeFromCart } from "../store/products/productsActions";
+import { Link } from "react-router-dom";
 
 class Cart extends Component {
   componentDidMount() {
     console.log("Cart did mount");
   }
+
+  handleAddClick = product => {
+    return this.props.dispatch(addToCart(product));
+  };
+
+  handleRemoveClick = product => {
+    return this.props.dispatch(removeFromCart(product));
+  };
+
   render() {
     return (
       <div>
@@ -16,18 +28,25 @@ class Cart extends Component {
                 <div>
                   <h3>{prod.title}</h3>
                   <p>{prod.author}</p>
-                  <p>{prod.price}</p>
+                  <p>€{prod.price}</p>
                 </div>
-                <span className="badge">Qty: {prod.qty}</span>
-                <span className="badge">
-                  Total price: {prod.qty * prod.price}
-                </span>
+
+
+                <p className="badge">Units</p>
+                <button onClick={() => this.handleAddClick(prod)}>+</button>
+                <span className="badge">{prod.qty}</span>
+                <button onClick={() => this.handleRemoveClick(prod)}>-</button>
+
+                <p className="badge">Total price</p>
+                <span className="badge">{prod.qty * prod.price}</span>
               </li>
             );
           })}
           <li className="list-group-item">
-            <p>Total: </p>
-            <button>Proceed to checkout</button>
+            <p>Total:</p>
+            <Link to={"/checkout"}>
+              <button>Proceed to checkout</button>
+            </Link>
           </li>
         </ul>
       </div>

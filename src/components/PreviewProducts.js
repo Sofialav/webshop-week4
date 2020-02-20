@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { addToCart } from "../store/products/productsActions";
 import "./PreviewProducts.css";
+
 class PreviewProducts extends Component {
   handleAddClick = product => {
     if (!product.inStock) {

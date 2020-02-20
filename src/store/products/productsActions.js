@@ -26,9 +26,24 @@ export function addToCart(product) {
   };
 }
 
+
 export function searchByTitle(input) {
   return {
     type: "SEARCH_RESULTS",
     payload: input
+  };
+}
+    
+export function removeFromCart(product) {
+  return {
+    type: "REMOVE_FROM_CART",
+    payload: {
+      id: product.id,
+      title: product.title,
+      author: product.author,
+      price: product.price,
+      qty: 1
+    }
+
   };
 }
