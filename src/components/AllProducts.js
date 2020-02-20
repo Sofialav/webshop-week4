@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { fetchProducts, addToCart } from "../store/products/productsActions";
 import "./AllProducts.css";
+import { Link } from "react-router-dom";
 
 class AllProducts extends Component {
   componentDidMount() {
@@ -35,12 +36,16 @@ class AllProducts extends Component {
                       >
                         Add to Cart
                       </button>
-                      <button
-                        type="button"
-                        className="btn btn-warning disabled"
-                      >
-                        Details
-                      </button>
+                      {/* temporary linked to card
+                      change later!!! */}
+                      <Link to={`/cart`}>
+                        <button
+                          type="button"
+                          className="btn btn-warning disabled"
+                        >
+                          Details
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
