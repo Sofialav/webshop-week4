@@ -5,10 +5,6 @@ import { removeFromCart } from "../store/products/productsActions";
 import { Link } from "react-router-dom";
 
 class Cart extends Component {
-  componentDidMount() {
-    console.log("Cart did mount");
-  }
-
   handleAddClick = product => {
     return this.props.dispatch(addToCart(product));
   };
@@ -30,7 +26,6 @@ class Cart extends Component {
                   <p>{prod.author}</p>
                   <p>€{prod.price}</p>
                 </div>
-
 
                 <p className="badge">Units</p>
                 <button onClick={() => this.handleAddClick(prod)}>+</button>

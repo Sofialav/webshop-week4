@@ -9,7 +9,6 @@ class PreviewProducts extends Component {
     if (!product.inStock) {
       return alert("Sorry, this product is temporary out of stock");
     }
-    console.log("add to cart");
     return this.props.dispatch(addToCart(product));
   };
 
