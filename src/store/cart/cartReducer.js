@@ -1,12 +1,9 @@
 const initialState = [];
-
 export default function cartReducer(state = initialState, action) {
   switch (action.type) {
     case "ADD_TO_CART": {
       const productId = action.payload.id;
-
       const x = state.find(obj => obj.id === productId);
-
       if (x) {
         const updatedCart = state.map(it =>
           it.id === productId ? { ...it, qty: it.qty + 1 } : it
@@ -37,7 +34,6 @@ export default function cartReducer(state = initialState, action) {
         return state;
       }
     }
-
     default:
       return state;
   }

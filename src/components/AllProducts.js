@@ -33,6 +33,6 @@ class AllProducts extends Component {
 }
 
 function mapStateToProps(reduxState) {
-  return { products: reduxState.products };
+  return { products: reduxState.products.products };
 }
 export default connect(mapStateToProps)(AllProducts);

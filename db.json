@@ -13,7 +13,7 @@
       "id": 2,
       "categoryId": 1,
       "title": "Product 2",
-      "author": "Authors_name",
+      "author": "Neil Gaiman",
       "imageUrl": "https://picsum.photos/400?image=230",
       "inStock": false,
       "price": "2374"
@@ -31,7 +31,7 @@
       "id": 4,
       "categoryId": 3,
       "title": "Product 4",
-      "author": "Authors_name",
+      "author": "Stephen King",
       "imageUrl": "https://picsum.photos/400?image=963",
       "inStock": true,
       "price": "2367"
@@ -76,7 +76,7 @@
       "id": 9,
       "categoryId": 3,
       "title": "Product 9",
-      "author": "Authors_name",
+      "author": "Stephen King",
       "imageUrl": "https://picsum.photos/400?image=615",
       "inStock": false,
       "price": "2345"
@@ -166,7 +166,7 @@
       "id": 19,
       "categoryId": 2,
       "title": "Product 19",
-      "author": "Authors_name",
+      "author": "Neil Gaiman",
       "imageUrl": "https://picsum.photos/400?image=359",
       "inStock": false,
       "price": "1966"

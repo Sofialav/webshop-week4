@@ -31,6 +31,7 @@ class Cart extends Component {
                   <p>€{prod.price}</p>
                 </div>
 
+
                 <p className="badge">Units</p>
                 <button onClick={() => this.handleAddClick(prod)}>+</button>
                 <span className="badge">{prod.qty}</span>
