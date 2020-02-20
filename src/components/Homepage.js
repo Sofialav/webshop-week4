@@ -25,7 +25,7 @@ class Homepage extends Component {
     });
     console.log("HI", this.props.categories);
     return (
-      <div className="container">
+      <div className="container categories">
         <div className="row">{displayCategories}</div>
       </div>
     );

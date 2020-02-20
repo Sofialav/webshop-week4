@@ -8,6 +8,12 @@ export function categoryReducer(state = initialState, action) {
         categoriesDetails: action.payload
       };
     }
+    case "FETCH_CATEGORY_PRODUCTS": {
+      return {
+        ...state,
+        singleCategoryProducts: action.payload
+      };
+    }
     default: {
       return state;
     }

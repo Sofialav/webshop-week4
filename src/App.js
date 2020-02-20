@@ -6,6 +6,7 @@ import { Switch, Route } from "react-router-dom";
 import Homepage from "./components/Homepage";
 import AllProducts from "./components/AllProducts";
 import SingleCategory from "./components/SingleCategory";
+import CheckoutPage from "./components/CheckoutPage";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/products" component={AllProducts} />
-        <Route path="/:categoryid" component={SingleCategory} />
+        <Route path="/checkout" component={CheckoutPage} />
+        <Route path="/category/:categoryId" component={SingleCategory} />
         <Route exact path="/" component={Homepage} />
       </Switch>
     </div>
