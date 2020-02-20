@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { fetchCategories } from "../store/categories/categoryActions";
 import PreviewCategory from "./PreviewCategory";
+
 import "./Homepage.css";
 
 class Homepage extends Component {
@@ -14,10 +15,20 @@ class Homepage extends Component {
       return <div>Loading</div>;
     }
     const displayCategories = this.props.categories.map(category => {
-      return <PreviewCategory src={category.imageUrl} genre={category.name} />;
+      return (
+        <PreviewCategory
+          id={category.id}
+          src={category.imageUrl}
+          genre={category.name}
+        />
+      );
     });
     console.log("HI", this.props.categories);
-    return <div>{displayCategories}</div>;
+    return (
+      <div className="container">
+        <div className="row">{displayCategories}</div>
+      </div>
+    );
   }
 }
 
