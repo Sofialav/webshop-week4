@@ -12,9 +12,8 @@ export default function cartReducer(state = initialState, action) {
             return obj;
           }
         });
-      } else {
-        return [...state, action.payload];
       }
+      return [...state, action.payload];
     }
     default:
       return state;

@@ -1,57 +1,32 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { fetchProducts, addToCart } from "../store/products/productsActions";
+import { fetchProducts } from "../store/products/productsActions";
+import PreviewProducts from "./PreviewProducts";
 import "./AllProducts.css";
-import { Link } from "react-router-dom";
 
 class AllProducts extends Component {
   componentDidMount() {
     this.props.dispatch(fetchProducts);
   }
-  handleAddClick(product) {
-    if (!product.inStock) {
-      return alert("Sorry, this product is temporary out of stock");
-    }
-    console.log("add to cart");
-    return this.props.dispatch(addToCart(product));
-  }
+
   render() {
+    const displayProducts = this.props.products.map(prod => {
+      return (
+        <PreviewProducts
+          key={prod.id}
+          imageUrl={prod.imageUrl}
+          title={prod.title}
+          author={prod.author}
+          prod={prod}
+        />
+      );
+    });
+
     return (
       <div>
         <h1>All Books</h1>
         <div className="container">
-          <div className="row">
-            {this.props.products.map(prod => {
-              return (
-                <div className="col-sm-4 prod-margin">
-                  <div key={prod.id} className="prodPreview">
-                    <img src={prod.imageUrl} className="mr-3" alt="picture" />
-                    <h3>{prod.title}</h3>
-                    <p>{prod.author}</p>
-                    <div className="btn-group" role="group">
-                      <button
-                        type="button"
-                        className="btn btn-danger disabled"
-                        onClick={() => this.handleAddClick(prod)}
-                      >
-                        Add to Cart
-                      </button>
-                      {/* temporary linked to card
-                      change later!!! */}
-                      <Link to={`/cart`}>
-                        <button
-                          type="button"
-                          className="btn btn-warning disabled"
-                        >
-                          Details
-                        </button>
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+          <div className="row">{displayProducts}</div>
         </div>
       </div>
     );
