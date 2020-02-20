@@ -13,3 +13,16 @@ export function setProduct(products) {
     payload: products
   };
 }
+
+export function addToCart(product) {
+  console.log("addtocart", product);
+  return {
+    type: "ADD_TO_CART",
+    payload: {
+      id: product.id,
+      title: product.title,
+      author: product.author,
+      price: product.price
+    }
+  };
+}
