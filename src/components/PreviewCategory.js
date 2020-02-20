@@ -1,14 +1,18 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
 class PreviewCategory extends Component {
   render() {
     return (
-      <div>
+      <div className="col-lg-3 col-sm-6 contentBlock">
         <div>
           <img src={this.props.src} alt="" />
+
           <h1>{this.props.genre}</h1>
-          <button> See more</button>
+          <Link to={`/:${this.props.id}`}>
+            <button> See more</button>
+          </Link>
         </div>
       </div>
     );
