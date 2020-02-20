@@ -10,16 +10,27 @@ class AllProducts extends Component {
   render() {
     return (
       <div>
-        AllProducts
+        <h1>All Books</h1>
         <div className="container">
           <div className="row">
             {this.props.products.map(prod => {
               return (
-                <div className="col">
+                <div className="col-sm-4 prod-margin">
                   <div key={prod.id} className="prodPreview">
                     <img src={prod.imageUrl} className="mr-3" />
                     <h3>{prod.title}</h3>
                     <p>{prod.author}</p>
+                    <div className="btn-group" role="group">
+                      <button type="button" className="btn btn-danger disabled">
+                        Add to Cart
+                      </button>
+                      <button
+                        type="button"
+                        className="btn btn-warning disabled"
+                      >
+                        Details
+                      </button>
+                    </div>
                   </div>
                 </div>
               );
