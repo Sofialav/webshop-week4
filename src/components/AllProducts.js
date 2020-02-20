@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { fetchProducts } from "../store/products/productsActions";
 import PreviewProducts from "./PreviewProducts";
-import "./AllProducts.css";
 
 class AllProducts extends Component {
   componentDidMount() {
@@ -34,6 +33,6 @@ class AllProducts extends Component {
 }
 
 function mapStateToProps(reduxState) {
-  return { products: reduxState.products };
+  return { products: reduxState.products.products };
 }
 export default connect(mapStateToProps)(AllProducts);

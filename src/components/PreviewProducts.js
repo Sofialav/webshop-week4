@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { addToCart } from "../store/products/productsActions";
-
-class PreviewCategory extends Component {
+import "./PreviewProducts.css";
+class PreviewProducts extends Component {
   handleAddClick = product => {
     if (!product.inStock) {
       return alert("Sorry, this product is temporary out of stock");
@@ -45,4 +45,4 @@ function mapStateToProps(reduxState) {
   return {};
 }
 
-export default connect(mapStateToProps)(PreviewCategory);
+export default connect(mapStateToProps)(PreviewProducts);

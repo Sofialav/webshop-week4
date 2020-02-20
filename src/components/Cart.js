@@ -18,13 +18,15 @@ class Cart extends Component {
                   <p>{prod.author}</p>
                   <p>{prod.price}</p>
                 </div>
-                <span className="badge">{prod.qty}</span>
-                <span className="badge">{prod.qty * prod.price}</span>
+                <span className="badge">Qty: {prod.qty}</span>
+                <span className="badge">
+                  Total price: {prod.qty * prod.price}
+                </span>
               </li>
             );
           })}
           <li className="list-group-item">
-            <p>Total:</p>
+            <p>Total: </p>
             <button>Proceed to checkout</button>
           </li>
         </ul>
