@@ -7,6 +7,8 @@ import Homepage from "./components/Homepage";
 import AllProducts from "./components/AllProducts";
 import SingleCategory from "./components/SingleCategory";
 import CheckoutPage from "./components/CheckoutPage";
+import Cart from "./components/Cart";
+
 
 function App() {
   return (
@@ -15,8 +17,11 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/products" component={AllProducts} />
+
         <Route path="/checkout" component={CheckoutPage} />
         <Route path="/category/:categoryId" component={SingleCategory} />
+
+        <Route exact path="/cart" component={Cart} />
         <Route exact path="/" component={Homepage} />
       </Switch>
     </div>
