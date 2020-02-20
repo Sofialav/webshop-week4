@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { searchBook } from "../store/search/searchActions";
+import { searchByTitle } from "../store/products/productsActions";
 
 class Search extends Component {
   state = {
@@ -14,7 +14,7 @@ class Search extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    this.props.dispatch(searchBook(this.state.input));
+    this.props.dispatch(searchByTitle(this.state.input));
   };
   render() {
     return (

@@ -1,14 +1,16 @@
-export function searchBook(input) {
-  return function thunk(dispatch) {
-    // fetch("http://localhost:4000/products/?title=${input}").then(book => {
-    //   dispatch(searchByTitle(book));
-    // });
-  };
-}
+// export function searchBook(input) {
+//   return function thunk(dispatch) {
+//     fetch("http://localhost:4000/products")
+//       .then(res => res.json())
+//       .then(data => {
+//         dispatch(searchByTitle(books));
+//       });
+//   };
+// }
 
-export function searchByTitle(books) {
-  return {
-    type: "SEARCH_RESULTS",
-    payload: books
-  };
-}
+// export function searchByTitle(books) {
+//   return {
+//     type: "SEARCH_RESULTS",
+//     payload: books
+//   };
+// }

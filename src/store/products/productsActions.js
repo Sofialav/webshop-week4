@@ -25,3 +25,10 @@ export function addToCart(product) {
     }
   };
 }
+
+export function searchByTitle(input) {
+  return {
+    type: "SEARCH_RESULTS",
+    payload: input
+  };
+}
