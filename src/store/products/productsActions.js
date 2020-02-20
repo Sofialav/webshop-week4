@@ -7,7 +7,6 @@ export function fetchProducts(dispatch) {
 }
 
 export function setProduct(products) {
-  console.log("set products func", products);
   return {
     type: "SET_PRODUCTS",
     payload: products
@@ -15,14 +14,14 @@ export function setProduct(products) {
 }
 
 export function addToCart(product) {
-  console.log("addtocart", product);
   return {
     type: "ADD_TO_CART",
     payload: {
       id: product.id,
       title: product.title,
       author: product.author,
-      price: product.price
+      price: product.price,
+      qty: 1
     }
   };
 }
