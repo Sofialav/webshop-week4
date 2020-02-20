@@ -9,20 +9,24 @@ class Cart extends Component {
     return (
       <div>
         This is cart
-        <ul class="list-group">
+        <ul className="list-group">
           {this.props.cart.map(prod => {
             return (
-              <li class="list-group-item" key={prod.id}>
+              <li className="list-group-item" key={prod.id}>
                 <div>
                   <h3>{prod.title}</h3>
                   <p>{prod.author}</p>
                   <p>{prod.price}</p>
                 </div>
-                <span class="badge">14</span>
-                <span class="badge">Total item price</span>
+                <span className="badge">{prod.qty}</span>
+                <span className="badge">{prod.qty * prod.price}</span>
               </li>
             );
           })}
+          <li className="list-group-item">
+            <p>Total:</p>
+            <button>Proceed to checkout</button>
+          </li>
         </ul>
       </div>
     );
