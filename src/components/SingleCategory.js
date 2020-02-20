@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { fetchCategoryProducts } from "../store/categories/categoryActions";
-import PreviewCategory from "../components/PreviewCategory";
+import PreviewProducts from "../components/PreviewProducts";
 
 class SingleCategory extends Component {
   componentDidMount() {
@@ -14,12 +14,14 @@ class SingleCategory extends Component {
     if (!this.props.categoryProducts) {
       return <div>Loading</div>;
     }
-    const displayProducts = this.props.categoryProducts.map(category => {
+    const displayProducts = this.props.categoryProducts.map(prod => {
       return (
-        <PreviewCategory
-          id={category.id}
-          src={category.imageUrl}
-          genre={category.title}
+        <PreviewProducts
+          key={prod.id}
+          imageUrl={prod.imageUrl}
+          title={prod.title}
+          author={prod.author}
+          prod={prod}
         />
       );
     });

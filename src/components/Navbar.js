@@ -2,8 +2,13 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+
 class Navbar extends Component {
   render() {
+    const QtyPerItem = this.props.cartItems.map(prod => prod.qty);
+    console.log(QtyPerItem);
+    const NumberOfItems = QtyPerItem.reduce((acc, prod) => acc + prod, 0);
+
     return (
       <nav className="navbar navbar-default navbar-fixed-top">
         <div className="container navbar">
@@ -14,9 +19,8 @@ class Navbar extends Component {
             <div className="navbar-brand">Products</div>
           </Link>
           <Link to={"/cart"}>
-            <div className="navbar-brand">Cart</div>
+            <div className="navbar-brand">Cart ({NumberOfItems})</div>
           </Link>
-          <div className="navbar-brand">0</div>
           <Link to={"/checkout"}>
             <div className="navbar-brand">Login</div>
           </Link>
@@ -28,7 +32,7 @@ class Navbar extends Component {
 
 function mapStateToProps(reduxState) {
   return {
-    categories: reduxState.categories.categoriesDetails
+    cartItems: reduxState.cart
   };
 }
 
