@@ -10,7 +10,7 @@ class PreviewCategory extends Component {
           <img src={this.props.src} alt="" />
 
           <h1>{this.props.genre}</h1>
-          <Link to={`/:${this.props.id}`}>
+          <Link to={`/category/${this.props.id}`}>
             <button> See more</button>
           </Link>
         </div>
