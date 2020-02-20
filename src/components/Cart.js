@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { addToCart } from "../store/products/productsActions";
 import { removeFromCart } from "../store/products/productsActions";
+import { Link } from "react-router-dom";
+
 class Cart extends Component {
   componentDidMount() {
     console.log("Cart did mount");
@@ -41,7 +43,9 @@ class Cart extends Component {
           })}
           <li className="list-group-item">
             <p>Total:</p>
-            <button>Proceed to checkout</button>
+            <Link to={"/checkout"}>
+              <button>Proceed to checkout</button>
+            </Link>
           </li>
         </ul>
       </div>

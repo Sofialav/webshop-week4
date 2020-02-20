@@ -21,9 +21,6 @@ class Navbar extends Component {
           <Link to={"/cart"}>
             <div className="navbar-brand">Cart ({NumberOfItems})</div>
           </Link>
-          <Link to={"/checkout"}>
-            <div className="navbar-brand">Login</div>
-          </Link>
         </div>
       </nav>
     );
