@@ -1,4 +1,8 @@
-const initialState = [];
+import { defineState } from "redux-localstore";
+
+const defaultState = [];
+const initialState = defineState(defaultState)("cart");
+
 export default function cartReducer(state = initialState, action) {
   switch (action.type) {
     case "ADD_TO_CART": {
