@@ -12,6 +12,14 @@ export function setProduct(products) {
     payload: products
   };
 }
+export function displayProduct(productId) {
+  return {
+    type: "DISPLAY_PRODUCT",
+    payload: {
+      id: parseInt(productId)
+    }
+  };
+}
 
 export function addToCart(product) {
   return {

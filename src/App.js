@@ -9,6 +9,7 @@ import SingleCategory from "./components/SingleCategory";
 import CheckoutPage from "./components/CheckoutPage";
 import Cart from "./components/Cart";
 import SearchResults from "./components/SearchResults";
+import ProductDetails from "./components/ProductDetails";
 
 function App() {
   return (
@@ -17,8 +18,8 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/products/searched" component={SearchResults} />
-        <Route path="/products" component={AllProducts} />
-
+        <Route exact path="/products" component={AllProducts} />
+        <Route path="/products/:productId" component={ProductDetails} />
         <Route path="/checkout" component={CheckoutPage} />
         <Route path="/category/:categoryId" component={SingleCategory} />
         <Route exact path="/cart" component={Cart} />
