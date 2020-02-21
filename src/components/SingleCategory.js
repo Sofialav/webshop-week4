@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { fetchCategoryProducts } from "../store/categories/categoryActions";
+import { fetchProducts } from "../store/products/productsActions";
 import PreviewProducts from "../components/PreviewProducts";
 
 class SingleCategory extends Component {
   componentDidMount() {
     const categoryId = this.props.match.params.categoryId;
+    this.props.dispatch(fetchProducts);
     this.props.dispatch(fetchCategoryProducts(categoryId));
   }
 
