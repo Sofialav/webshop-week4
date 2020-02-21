@@ -10,8 +10,12 @@ class SingleCategory extends Component {
   }
 
   render() {
-    if (!this.props.categoryProducts) {
-      return <div>Loading</div>;
+    if (!this.props.categoryProducts || this.props.loading) {
+      return (
+        <div class="spinner-border" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      );
     }
     const displayProducts = this.props.categoryProducts.map(prod => {
       return (
@@ -36,7 +40,8 @@ class SingleCategory extends Component {
 
 function mapStateToProps(reduxState) {
   return {
-    categoryProducts: reduxState.categories.singleCategoryProducts
+    categoryProducts: reduxState.categories.singleCategoryProducts,
+    loading: reduxState.categories.loading
   };
 }
 

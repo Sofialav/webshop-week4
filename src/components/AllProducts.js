@@ -9,6 +9,13 @@ class AllProducts extends Component {
   }
 
   render() {
+    if (this.props.products.length === 0) {
+      return (
+        <div class="spinner-border" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      );
+    }
     const displayProducts = this.props.products.map(prod => {
       return (
         <PreviewProducts
@@ -19,11 +26,9 @@ class AllProducts extends Component {
           prod={prod}
           id={prod.id}
           price={prod.price}
-
         />
       );
     });
-
     return (
       <div>
         <div className="container">
