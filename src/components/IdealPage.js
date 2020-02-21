@@ -2,17 +2,19 @@ import React from "react";
 import { connect } from "react-redux";
 import { loadStripe } from "@stripe/stripe-js";
 import {
-  CardNumberElement,
-  CardCvcElement,
-  CardExpiryElement,
   Elements,
-  ElementsConsumer
+  ElementsConsumer,
+  IdealBankElement
 } from "@stripe/react-stripe-js";
-import "./CheckoutPage.css";
 
 const ELEMENT_OPTIONS = {
+  classes: {
+    base: "StripeElementIdeal",
+    focus: "StripeElementIdeal--focus"
+  },
   style: {
     base: {
+      padding: "10px 14px",
       fontSize: "18px",
       color: "#424770",
       letterSpacing: "0.025em",
@@ -26,21 +28,17 @@ const ELEMENT_OPTIONS = {
   }
 };
 
-class CheckoutPage extends React.Component {
+class CheckoutForm extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      name: "",
-      postal: "",
-      errorMessage: null,
-      paymentMethod: null
-    };
+    this.state = { name: "", errorMessage: null, paymentMethod: null };
   }
 
   handleSubmit = async event => {
     event.preventDefault();
+
     const { stripe, elements } = this.props;
-    const { name, postal } = this.state;
+    const { name } = this.state;
 
     if (!stripe || !elements) {
       // Stripe.js has not loaded yet. Make sure to disable
@@ -48,16 +46,12 @@ class CheckoutPage extends React.Component {
       return;
     }
 
-    const cardElement = elements.getElement(CardNumberElement);
+    const idealBankElement = elements.getElement(IdealBankElement);
 
     const payload = await stripe.createPaymentMethod({
-      type: "card",
-      card: cardElement,
+      type: "ideal",
       billing_details: {
-        name,
-        address: {
-          postal_code: postal
-        }
+        name
       }
     });
 
@@ -77,12 +71,11 @@ class CheckoutPage extends React.Component {
   };
 
   render() {
+    const { errorMessage, paymentMethod, name } = this.state;
     const { stripe } = this.props;
-    const { postal, name, paymentMethod, errorMessage } = this.state;
-
     return (
       <form onSubmit={this.handleSubmit}>
-        <label htmlFor="name">Name on the card</label>
+        <label htmlFor="name">Full Name</label>
         <input
           id="name"
           required
@@ -92,31 +85,10 @@ class CheckoutPage extends React.Component {
             this.setState({ name: event.target.value });
           }}
         />
-        <br />
-        <label htmlFor="cardNumber">Card Number</label>
-        <br />
-        <CardNumberElement id="cardNumber" options={ELEMENT_OPTIONS} />
-        <br />
-        <label htmlFor="expiry">Card Expiration</label>
-        <br />
-        <CardExpiryElement id="expiry" options={ELEMENT_OPTIONS} />
-        <br />
-        <label htmlFor="cvc">CVC</label>
-        <br />
-        <CardCvcElement id="cvc" options={ELEMENT_OPTIONS} />
-        <br />
-        <label htmlFor="postal">Postal Code</label>
-        <input
-          id="postal"
-          required
-          placeholder="12345"
-          value={postal}
-          onChange={event => {
-            this.setState({ postal: event.target.value });
-          }}
-        />
+        <label htmlFor="ideal">iDEAL Bank</label>
+        <IdealBankElement id="ideal" options={ELEMENT_OPTIONS} />
         {errorMessage && <p>{errorMessage}</p>}
-        {paymentMethod && <p>Your order is beeing proccessed</p>}
+        {paymentMethod && <p>Got PaymentMethod: {paymentMethod.id}</p>}
         <button type="submit" disabled={!stripe}>
           Pay
         </button>
@@ -128,17 +100,21 @@ class CheckoutPage extends React.Component {
 const InjectedCheckoutForm = () => (
   <ElementsConsumer>
     {({ stripe, elements }) => (
-      <CheckoutPage stripe={stripe} elements={elements} />
+      <CheckoutForm stripe={stripe} elements={elements} />
     )}
   </ElementsConsumer>
 );
 
+// Make sure to call `loadStripe` outside of a component’s render to avoid
+// recreating the `Stripe` object on every render.
 const stripePromise = loadStripe("pk_test_6pRNASCoBOKtIshFeQd4XMUh");
 
-const StipeCheckout = () => (
-  <Elements stripe={stripePromise}>
-    <InjectedCheckoutForm />
-  </Elements>
-);
+const Ideal = () => {
+  return (
+    <Elements stripe={stripePromise}>
+      <InjectedCheckoutForm />
+    </Elements>
+  );
+};
 
-export default connect()(StipeCheckout);
+export default connect()(Ideal);
