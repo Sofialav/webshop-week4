@@ -2,12 +2,15 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { displayProduct } from "../store/products/productsActions";
 import { addToCart } from "../store/cart/cartActions";
+import Comments from "./Comments";
 import "./ProductDetails.css";
+import { fetchComments } from "../store/comments/commentsActions";
 
 class ProductDetails extends Component {
   componentDidMount() {
     const productId = this.props.match.params.productId;
     this.props.dispatch(displayProduct(productId));
+    this.props.dispatch(fetchComments);
   }
   handleAddClick = product => {
     if (!product.inStock) {
@@ -40,6 +43,7 @@ class ProductDetails extends Component {
             </button>
           </div>
         </div>
+        <Comments />
       </div>
     );
   }
