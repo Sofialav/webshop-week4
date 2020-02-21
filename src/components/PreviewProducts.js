@@ -29,7 +29,7 @@ class PreviewProducts extends Component {
               Add to Cart
             </button>
             <Link to={`/products/${this.props.id}`}>
-              <button type="button" className="btn btn-warning disabled">
+              <button type="button" className="btn disabled">
                 Details
               </button>
             </Link>
