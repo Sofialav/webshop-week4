@@ -12,6 +12,19 @@ class PreviewProducts extends Component {
     return this.props.dispatch(addToCart(product));
   };
 
+  displayIsInCart = () => {
+    const inCart = this.props.cartItems.find(item => item.id === this.props.id);
+    console.log("IS IN CART", inCart);
+
+    if (inCart) {
+      const itemInCart = `- ${inCart.qty} in your cart`;
+      console.log(itemInCart);
+      return itemInCart;
+    } else {
+      const itemInCart = " ";
+      return itemInCart;
+    }
+  };
   render() {
     return (
       <div className="col-sm-4 prod-margin">
@@ -19,7 +32,10 @@ class PreviewProducts extends Component {
           <img src={this.props.imageUrl} className="mr-3" alt="" />
           <h5>{this.props.title}</h5>
           <p>{this.props.author}</p>
-          <p>€ {this.props.price}</p>
+          <p>
+            € {this.props.price}{" "}
+            <span className="inCart">{this.displayIsInCart()}</span>
+          </p>
           <div className="btn-group" role="group">
             <button
               type="button"
@@ -41,7 +57,9 @@ class PreviewProducts extends Component {
 }
 
 function mapStateToProps(reduxState) {
-  return {};
+  return {
+    cartItems: reduxState.cart
+  };
 }
 
 export default connect(mapStateToProps)(PreviewProducts);
