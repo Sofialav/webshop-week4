@@ -1,0 +1,8 @@
+.details-block {
+  margin: 20px;
+}
+
+.details-image {
+  max-width: 300px;
+  border: 2px, solid, black !important;
+}

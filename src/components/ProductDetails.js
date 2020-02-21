@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { displayProduct } from "../store/products/productsActions";
 import { addToCart } from "../store/products/productsActions";
+import "./ProductDetails.css";
 
 class ProductDetails extends Component {
   componentDidMount() {
@@ -18,8 +19,12 @@ class ProductDetails extends Component {
   render() {
     return (
       <div>
-        <div key={this.props.product.id} className="media">
-          <img src={this.props.product.imageUrl} className="mr-3" alt="" />
+        <div key={this.props.product.id} className="media details-block">
+          <img
+            src={this.props.product.imageUrl}
+            className="mr-3 details-image"
+            alt=""
+          />
           <div className="media-body">
             <h3 className="mt-0">{this.props.product.title}</h3>
             <p>{this.props.product.author}</p>
