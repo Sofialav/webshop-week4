@@ -17,7 +17,7 @@ class PreviewProducts extends Component {
       <div className="col-sm-4 prod-margin">
         <div key={this.props.id} className="prodPreview">
           <img src={this.props.imageUrl} className="mr-3" alt="" />
-          <h3>{this.props.title}</h3>
+          <h5>{this.props.title}</h5>
           <p>{this.props.author}</p>
           <div className="btn-group" role="group">
             <button

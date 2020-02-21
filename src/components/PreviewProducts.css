@@ -1,3 +1,6 @@
 .prod-margin {
   margin-bottom: 40px;
 }
+.prod-margin img {
+  max-height: 300px;
+}
