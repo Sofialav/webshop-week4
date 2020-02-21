@@ -21,7 +21,9 @@ class Cart extends Component {
   render() {
     const priceQtyPerItem = this.props.cart.map(prod => prod.qty * prod.price);
     const totalprice = priceQtyPerItem.reduce((acc, prod) => acc + prod, 0);
-
+    if (this.props.cart.length < 1) {
+      return <h2 className="mt-4">Your cart is empty</h2>;
+    }
     return (
       <div>
         <ul className="list-group">
