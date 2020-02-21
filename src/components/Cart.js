@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { addToCart } from "../store/products/productsActions";
-import { removeFromCart } from "../store/products/productsActions";
+import {
+  removeFromCart,
+  clearCart,
+  addToCart
+} from "../store/cart/cartActions";
 import { Link } from "react-router-dom";
 
 class Cart extends Component {
@@ -12,10 +15,11 @@ class Cart extends Component {
   handleRemoveClick = product => {
     return this.props.dispatch(removeFromCart(product));
   };
-
+  handleClearCart = () => {
+    return this.props.dispatch(clearCart());
+  };
   render() {
     const priceQtyPerItem = this.props.cart.map(prod => prod.qty * prod.price);
-
     const totalprice = priceQtyPerItem.reduce((acc, prod) => acc + prod, 0);
 
     return (
@@ -43,8 +47,11 @@ class Cart extends Component {
           <li className="list-group-item">
             <p>Total: € {totalprice}</p>
             <Link to={"/checkout"}>
-              <button>Proceed to checkout</button>
+              <button className="mr-1">Proceed to checkout</button>
             </Link>
+            <button className="ml-1" onClick={this.handleClearCart}>
+              CLear cart
+            </button>
           </li>
         </ul>
       </div>
