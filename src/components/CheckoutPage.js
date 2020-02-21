@@ -8,6 +8,7 @@ import {
   Elements,
   ElementsConsumer
 } from "@stripe/react-stripe-js";
+import "./CheckoutPage.css";
 
 const ELEMENT_OPTIONS = {
   style: {
