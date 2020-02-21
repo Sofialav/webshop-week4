@@ -12,7 +12,11 @@ class Homepage extends Component {
 
   render() {
     if (!this.props.categories) {
-      return <div>Loading</div>;
+      return (
+        <div class="spinner-border" role="status">
+          <span class="sr-only">Loading...</span>
+        </div>
+      );
     }
     const displayCategories = this.props.categories.map(category => {
       return (
