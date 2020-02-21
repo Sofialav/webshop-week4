@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { searchByTitle } from "../store/products/productsActions";
+import {
+  fetchProducts,
+  searchByTitle
+} from "../store/products/productsActions";
 import { withRouter } from "react-router-dom";
 
 class Search extends Component {
@@ -15,6 +18,7 @@ class Search extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
+    this.props.dispatch(fetchProducts);
     this.props.dispatch(searchByTitle(this.state.input));
     this.props.history.push("/products/searched");
   };

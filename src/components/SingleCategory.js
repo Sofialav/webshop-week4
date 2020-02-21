@@ -6,7 +6,6 @@ import PreviewProducts from "../components/PreviewProducts";
 class SingleCategory extends Component {
   componentDidMount() {
     const categoryId = this.props.match.params.categoryId;
-    console.log("Now let's fetch this category:", categoryId);
     this.props.dispatch(fetchCategoryProducts(categoryId));
   }
 

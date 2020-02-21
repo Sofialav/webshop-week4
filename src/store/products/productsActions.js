@@ -26,14 +26,13 @@ export function addToCart(product) {
   };
 }
 
-
 export function searchByTitle(input) {
   return {
     type: "SEARCH_RESULTS",
     payload: input
   };
 }
-    
+
 export function removeFromCart(product) {
   return {
     type: "REMOVE_FROM_CART",
@@ -44,6 +43,5 @@ export function removeFromCart(product) {
       price: product.price,
       qty: 1
     }
-
   };
 }
