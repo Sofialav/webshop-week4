@@ -18,13 +18,14 @@ class AllProducts extends Component {
           author={prod.author}
           prod={prod}
           id={prod.id}
+          price={prod.price}
+
         />
       );
     });
 
     return (
       <div>
-        <h1>All Books</h1>
         <div className="container">
           <div className="row">{displayProducts}</div>
         </div>
