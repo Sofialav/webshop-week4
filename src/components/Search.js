@@ -37,7 +37,7 @@ class Search extends Component {
           ></input>
           <button
             onClick={this.handleSubmit}
-            className="btn btn-outline-success my-2 my-sm-0"
+            className="btn btn-outline-dark my-2 my-sm-0"
             type="submit"
           >
             Search

@@ -14,9 +14,12 @@ class Cart extends Component {
   };
 
   render() {
+    const priceQtyPerItem = this.props.cart.map(prod => prod.qty * prod.price);
+
+    const totalprice = priceQtyPerItem.reduce((acc, prod) => acc + prod, 0);
+
     return (
       <div>
-        This is cart
         <ul className="list-group">
           {this.props.cart.map(prod => {
             return (
@@ -38,7 +41,7 @@ class Cart extends Component {
             );
           })}
           <li className="list-group-item">
-            <p>Total:</p>
+            <p>Total: € {totalprice}</p>
             <Link to={"/checkout"}>
               <button>Proceed to checkout</button>
             </Link>

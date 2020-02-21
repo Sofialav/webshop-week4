@@ -19,6 +19,7 @@ class PreviewProducts extends Component {
           <img src={this.props.imageUrl} className="mr-3" alt="" />
           <h5>{this.props.title}</h5>
           <p>{this.props.author}</p>
+          <p>€ {this.props.price}</p>
           <div className="btn-group" role="group">
             <button
               type="button"
@@ -30,7 +31,7 @@ class PreviewProducts extends Component {
             {/* temporary linked to card
                       change later!!! */}
             <Link to={`/cart`}>
-              <button type="button" className="btn btn-warning disabled">
+              <button type="button" className="btn disabled">
                 Details
               </button>
             </Link>
