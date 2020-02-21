@@ -22,7 +22,8 @@ class ProductDetails extends Component {
         <div key={this.props.product.id} className="media details-block">
           <img
             src={this.props.product.imageUrl}
-            className="mr-3 details-image"
+            className="mr-3"
+            id="details-image"
             alt=""
           />
           <div className="media-body">

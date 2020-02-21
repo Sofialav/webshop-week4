@@ -21,6 +21,8 @@ class SingleCategory extends Component {
           title={prod.title}
           author={prod.author}
           prod={prod}
+          price={prod.price}
+          id={prod.id}
         />
       );
     });

@@ -25,19 +25,19 @@ class Search extends Component {
   render() {
     return (
       <div>
-        <form className="form-inline">
+        <form className="form-inline mt-0 mb-0">
           <input
             onChange={this.handleChange}
             value={this.state.name}
             name="input"
-            className="form-control m` kš13t4'r-sm-2"
+            className="form-control r-sm-2"
             type="search"
             placeholder="Search by title"
             aria-label="Search"
           ></input>
           <button
             onClick={this.handleSubmit}
-            className="btn btn-outline-dark my-2 my-sm-0"
+            className="btn btn-outline-dark my-2 "
             type="submit"
           >
             Search
