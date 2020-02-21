@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import { addToCart } from "../store/products/productsActions";
+import { addToCart } from "../store/cart/cartActions";
 import "./PreviewProducts.css";
 
 class PreviewProducts extends Component {
