@@ -3,182 +3,202 @@
     {
       "id": 1,
       "categoryId": 4,
-      "title": "Product 1",
-      "author": "Authors_name",
-      "imageUrl": "https://picsum.photos/400?image=696",
+      "title": "How to Analyze People",
+      "author": "Emma Jones, Zach Raymond",
+      "imageUrl": "https://s.s-bol.com/imgbase0/imagebase3/large/FC/0/4/2/5/9200000054225240.jpg",
       "inStock": true,
-      "price": "3432"
+      "price": "13,99",
+      "resume": "We live in a world filled with people that we interact with on a daily basis. There are many different reasons for these interactions, and different outcomes based on these interactions. You are able to influence people with your words and body language, and by reading them, you are able to get what you want. There are many different ways being skilled in the art of reading people will help you in life. No matter what your position is at work, how much confidence you have when you are asking someone out, or how good you are at interacting with people, the ability to read people puts you way ahead of the rest. This book is going to help you read people… well… like a book. You are going to know what to look for, when to push, when to back down, and what to do in all kinds of situations. There are so many ways you can benefit from this skill, giving you an edge up in all aspects of life. Skeptical? Consider this… Knowing how to read people can: • Help you land that job offer you want • Give you an edge when you are inviting that girl out on a date • Send you warnings that someone is getting offended, and help you change what you are doing to avoid conflict • Keep harmony in the workplace or in the home • Encourage others to do their best or try harder • Motivate people • And more"
     },
     {
       "id": 2,
       "categoryId": 1,
-      "title": "Product 2",
-      "author": "Neil Gaiman",
-      "imageUrl": "https://picsum.photos/400?image=230",
+      "title": "Tweet Cute",
+      "author": "Emma Lord",
+      "imageUrl": "https://s.s-bol.com/imgbase0/imagebase3/large/FC/3/2/5/8/9200000120688523.jpg",
       "inStock": false,
-      "price": "2374"
+      "price": "13,99",
+      "resume": "From debut author Emma Lord comes a re-imagining of You’ve Got Mail in this heartfelt celebration of snarky tweets, first kisses and an epic social-media battle. All’s fair in love and cheese, until Pepper and Jack’s spat turns into a viral Twitter war. While they’re fighting, they’re also secretly falling for each other in real life."
     },
     {
       "id": 3,
       "categoryId": 4,
-      "title": "Product 3",
-      "author": "Authors_name",
-      "imageUrl": "https://picsum.photos/400?image=277",
-      "inStock": false,
-      "price": "1942"
+      "title": "Uncanny Valley",
+      "author": "Anna Wiener",
+      "imageUrl": "https://s.s-bol.com/imgbase0/imagebase3/large/FC/3/4/7/6/9200000110186743.jpg",
+      "inStock": true,
+      "price": "25,99",
+      "resume": "In her mid-twenties, at the height of tech industry idealism, Anna Wiener—stuck, broke, and looking for meaning in her work, like any good millennial--left a job in book publishing for the promise of the new digital economy. She moved from New York to San Francisco, where she landed at a big-data startup in the heart of the Silicon Valley bubble: a world of surreal extravagance, dubious success, and fresh-faced entrepreneurs hell-bent on domination, glory, and, of course, progress.Anna arrived amidst a massive cultural shift, as the tech industry rapidly transformed into a locus of wealth and power rivaling Wall Street. But amid the company ski vacations and in-office speakeasies, boyish camaraderie and ride-or-die corporate fealty, a new Silicon Valley began to emerge: one in far over its head, one that enriched itself at the expense of the idyllic future it claimed to be building. Part coming-age-story, part portrait of an already-bygone era, Anna Wiener’s memoir is a rare first-person glimpse into high-flying, reckless startup culture at a time of unchecked ambition, unregulated surveillance, wild fortune, and accelerating political power. With wit, candor, and heart, Anna deftly charts the tech industry’s shift from self-appointed world savior to democracy-endangering liability, alongside a personal narrative of aspiration, ambivalence, and disillusionment.Unsparing and incisive, Uncanny Valley is a cautionary tale, and a revelatory interrogation of a world reckoning with consequences its unwitting designers are only beginning to understand."
     },
     {
       "id": 4,
       "categoryId": 3,
-      "title": "Product 4",
-      "author": "Stephen King",
-      "imageUrl": "https://picsum.photos/400?image=963",
+      "title": "The Other People",
+      "author": "C.J. Tudor",
+      "imageUrl": "https://s.s-bol.com/imgbase0/imagebase3/large/FC/0/1/1/2/9200000110662110.jpg",
       "inStock": true,
-      "price": "2367"
+      "price": "25,99",
+      "resume": "Driving home one night, stuck behind a rusty old car, Gabe sees a little girl's face appear in the rear window. She mouths one word: 'Daddy.' It's his five-year-old daughter, Izzy.He never sees her again.Three years later, Gabe spends his days and nights travelling up and down the motorway, searching for the car that took his daughter, refusing to give up hope, even though most people believe that Izzy is dead.Fran and her daughter, Alice, also put in a lot of miles on the motorway. Not searching. But running. Trying to keep one step ahead of the people who want to hurt them. Because Fran knows the truth. She knows what really happened to Gabe's daughter.Then, the car that Gabe saw driving away that night is found, in a lake, with a body inside and Gabe is forced to confront events, not just from the night his daughter disappeared, but from far deeper in his past.His search leads him to a group called The Other People.If you have lost a loved one, The Other People want to help. Because they know what loss is like. They know what pain is like. They know what death is like.There's just one problem . . . they want other people to know it too."
     },
     {
       "id": 5,
       "categoryId": 3,
-      "title": "Product 5",
-      "author": "Authors_name",
-      "imageUrl": "https://picsum.photos/400?image=637",
+      "title": "Seven Deadly Shadows",
+      "author": "Courtney Alameda",
+      "imageUrl": "https://s.s-bol.com/imgbase0/imagebase3/large/FC/1/5/9/9/9200000098509951.jpg",
       "inStock": false,
-      "price": "1991"
+      "price": "35,99",
+      "resume": "This thrilling YA retelling of Kurosawas Seven Samurai features a girl tasked with saving the world from eternal darkness. Perfect for fans of Six of Crows and Marie Lu.Seventeen-year-old Kira Fujikawa has never had it easy. Shes bullied by the popular girls in school. Her parents ignore her. And shes also plagued with a secret: She can see yokai, the ghosts and demons that haunt the streets of Kyoto.But things accelerate from bad to worse when she learns that Shuten-doji, the demon king, will rise at the next blood moon to hunt down an ancient relic and bring the world to a catastrophic end.Not exactly skilled at fighting anything, much less the dead, Kira enlists the aid of seven powerful death gods to help her slay Shuten-doji. They include Shiro, a kitsune with boy-band looks who is more flirtatious than helpful, and O-bei, a regal demon courtier with reasons of her own for getting involved.As the confrontation with Shuten-doji draws nearer, the fate of Japan hangs in the balance. Can Kira save humankind? Or will the demon king succeed in bringing eternal darkness upon the world?"
     },
     {
       "id": 6,
       "categoryId": 3,
-      "title": "Product 6",
-      "author": "Authors_name",
-      "imageUrl": "https://picsum.photos/400?image=811",
+      "title": "Stranger Things: Zombie Boys",
+      "author": "Greg Pak",
+      "imageUrl": "https://s.s-bol.com/imgbase0/imagebase3/large/FC/7/7/9/7/9200000116847977.jpg",
       "inStock": true,
-      "price": "1956"
+      "price": "10,99",
+      "resume": "Following the events of season one of Netflix's pop-culture sensation Stranger Things, our main characters struggle with returning to normal life after overcoming supernatural horror.School is back in session in the normally quiet town of Hawkins, Indiana. Mike, Lucas, Dustin, and Will are still grappling with the traumatic encounters with the Demogorgon and the Upside Down in season one of the hit Netflix series. As tensions rise and fractures begin to form in the group, a new kid shows up to AV club with a Betamax Camcorder and an idea. The new Spielberg-wannabe friend, Joey Kim, wants to make a horror movie about a local legend, but when he sees Will's drawings, he discovers that his new friends are local legends."
     },
     {
       "id": 7,
       "categoryId": 2,
-      "title": "Product 7",
-      "author": "Authors_name",
-      "imageUrl": "https://picsum.photos/400?image=616",
+      "title": "A Good Man",
+      "author": "Ani Katz",
+      "imageUrl": "https://s.s-bol.com/imgbase0/imagebase3/large/FC/9/4/7/4/9200000119794749.jpg",
       "inStock": false,
-      "price": "2005"
+      "price": "20,99",
+      "resume": "Our lives were good – great, even. We were happy and secure. We had everything we needed. There was no way for anyone to know – least of all me – that it would all end the way it did. Thomas Martin is everything a man is supposed to be. He has a beautiful wife and a loving daughter, a good house on Long Island, a flourishing career at a prestigious Manhattan advertising firm. He's a good son and brother, taking it upon himself to support his ailing mother and adult sisters. He knows it's his God-given duty to shield them, his girls, from the everyday horrors of the world.But he has failed, and unspeakable tragedy has befallen his family.Now, Thomas struggles to come to terms with what has become of his life. If only he can tell the story as he saw it, he believes he might find out how and why things unravelled so horribly; how he failed so disastrously.Because Thomas Martin is a good man.A Good Man is a dark and gripping novel of psychological suspense about a family man, in the wake of a horrifying act, trying to work out where he went wrong. It is the debut of a bold and brilliant new talent."
     },
     {
       "id": 8,
       "categoryId": 4,
-      "title": "Product 8",
-      "author": "Authors_name",
-      "imageUrl": "https://picsum.photos/400?image=522",
+      "title": "Why We're Polarized",
+      "author": "Ezra Klein",
+      "imageUrl": "https://s.s-bol.com/imgbase0/imagebase3/large/FC/0/4/8/1/9200000116001840.jpg",
       "inStock": false,
-      "price": "1358"
+      "price": "16,90",
+      "resume": "After Election Day 2016, both supporters and opponents of the soon-to-be president hailed his victory as a historically unprecedented event. Most Americans could agree that no candidate like Donald Trump had ever been elected President before. But political journalist Ezra Klein makes the case that the 2016 election wasn't surprising at all. In fact, Trump's electoral victory followed the exact same template as previous elections, by capturing a nearly identical percentage of voter demographics as previous Republican candidates.Over the past 50 years in America, our partisan identities have merged with our racial, religious, geographic, ideological, and cultural identities. Those merged identities have attained a weight that is breaking much in our politics and tearing at the bonds that hold this country together.In this groundbreaking book, Klein shows how and why American politics polarized around identity in the 20th century, and what that polarization did to the way we see the world and each other. And he traces the feedback loops between our polarized political identities and our polarized political institutions that are driving our political system towards crisis.Neither a polemic nor a lament, Klein offers a clear framework for understanding everything from Trump's rise to the Democratic Party's leftward shift to the politicization of everyday culture. A revelatory book that will change how you look at politics, and perhaps at yourself."
     },
     {
       "id": 9,
       "categoryId": 3,
-      "title": "Product 9",
-      "author": "Stephen King",
-      "imageUrl": "https://picsum.photos/400?image=615",
+      "title": "The Dead Girls Club",
+      "author": "Damien Angelica Walters",
+      "imageUrl": "https://s.s-bol.com/imgbase0/imagebase3/large/FC/6/3/8/2/9200000107922836.jpg",
       "inStock": false,
-      "price": "2345"
+      "price": "26,99",
+      "resume": "In 1991, Heather Cole and her friends were members of the Dead Girls Club. Obsessed with the macabre, the girls exchanged stories about serial killers and imaginary monsters, like the Red Lady, the spirit of a vengeful witch killed centuries before. Heather knew the stories were just that, until her best friend Becca began insisting the Red Lady was real--and she could prove it.That belief got Becca killed.It's been nearly thirty years, but Heather has never told anyone what really happened that night--that Becca was right and the Red Lady was real. She's done her best to put that fateful summer, Becca, and the Red Lady, behind her. Until a familiar necklace arrives in the mail, a necklace Heather hasn't seen since the night Becca died.The night Heather killed her.Now, someone else knows what she did...and they're determined to make Heather pay."
     },
     {
       "id": 10,
       "categoryId": 1,
-      "title": "Product 10",
-      "author": "Authors_name",
-      "imageUrl": "https://picsum.photos/400?image=601",
+      "title": "The Two Lives of Lydia Bird",
+      "author": " Josie Silver",
+      "imageUrl": "https://s.s-bol.com/imgbase0/imagebase3/large/FC/9/4/9/5/9200000119535949.jpg",
       "inStock": false,
-      "price": "1823"
+      "price": "11,99",
+      "resume": "In this next captivating love story from the #1 New York Times bestselling author of One Day in December, a young woman is reunited with her late fiancé in a parallel life. But is this happy ending the one she really wants? Lydia and Freddie. Freddie and Lydia. They'd been together for more than a decade, and Lydia thought their love was indestructible. But she was wrong. On her twenty-eighth birthday, Freddie died in a car accident. So now it's just Lydia, and all she wants to do is hide indoors and sob until her eyes fall out. But Lydia knows that Freddie would want her to try to live fully, happily, even without him. So, enlisting the help of his best friend, Jonah, and her sister, Elle, she takes her first tentative steps into the world, open to life--and perhaps even love--again. But then something inexplicable happens that gives her another chance at her old life with Freddie. A life where none of the tragic events of the past few months have happened. Lydia is pulled again and again across the doorway of her past, living two lives, impossibly, at once. But there's an emotional toll to returning to a world where Freddie, alive, still owns her heart. Because there's someone in her new life, her real life, who wants her to stay."
     },
     {
       "id": 11,
       "categoryId": 1,
-      "title": "Product 11",
-      "author": "Authors_name",
-      "imageUrl": "https://picsum.photos/400?image=314",
+      "title": "You Were There Too",
+      "author": "Colleen Oakley",
+      "imageUrl": "https://s.s-bol.com/imgbase0/imagebase3/large/FC/9/7/0/2/9200000109872079.jpg",
       "inStock": true,
-      "price": "1752"
+      "price": "14,99",
+      "resume": "Acclaimed author Colleen Oakley delivers a heart-wrenching and unforgettable love story about a woman who must choose between the man she loves and the man fate has chosen for her in a novel that reminds us that the best life is one led by the heart. Mia Graydon's life looks picket-fence perfect; she has the house, her loving husband, and dreams of starting a family. But she has other dreams too — unexplained, recurring ones starring the same man. Still, she doesn’t think much of them, until a relocation to small-town Pennsylvania brings her face to face with the stranger she has been dreaming about for years. And this man harbors a jaw-dropping secret of his own—he's been dreaming of her too.Determined to understand, Mia and this not-so-stranger search for answers. But when diving into their pasts begins to unravel her life in the present, Mia emerges with a single question—what if?"
     },
     {
       "id": 12,
       "categoryId": 4,
-      "title": "Product 12",
-      "author": "Authors_name",
-      "imageUrl": "https://picsum.photos/400?image=442",
+      "title": "Successful Aging",
+      "author": " Daniel J. Levitin",
+      "imageUrl": "https://s.s-bol.com/imgbase0/imagebase3/large/FC/2/4/6/1/9200000123911642.jpg",
       "inStock": true,
-      "price": "2196"
+      "price": "14,99",
+      "resume": "Author of the iconic bestsellers This Is Your Brain on Music and The Organized Mind, Daniel Levitin turns his keen insights to what happens in our brains as we age; why we should think about health span, not life span; and, based on a rigorous analysis of neuroscientific evidence, how you can make the most of your seventies, eighties, and nineties today, no matter how old you are now. Successful Aging uses research from developmental neuroscience and the psychology of individual differences to show that sixty-plus years is a unique developmental stage that, like infancy or adolescence, has its own demands and distinct advantages. Levitin looks at the science behind what we can all learn from those who age joyously, as well as how to adapt our culture to take full advantage of older people's wisdom and experience. Throughout his exploration of what aging really means, Levitin reveals resilience strategies and practical, cognitive enhancing tricks everyone can do as they age. This book is packed with accessible and discussable takeaways, providing great material for reading groups and media coverage. Successful Aging inspires a powerful new approach to how readers think about our final decades, and it will revolutionize the way we plan for old age as individuals, family members, and citizens within a society where the average life expectancy continues to rise."
     },
     {
       "id": 13,
       "categoryId": 4,
-      "title": "Product 13",
-      "author": "Authors_name",
-      "imageUrl": "https://picsum.photos/400?image=338",
+      "title": "Overground Railroad",
+      "author": " Candacy A. Taylor",
+      "imageUrl": "https://s.s-bol.com/imgbase0/imagebase3/large/FC/2/1/5/3/9200000106403512.jpg",
       "inStock": true,
-      "price": "3276"
+      "price": "32,99",
+      "resume": "Published from 1936 to 1966, the Green Book was hailed as the “black travel guide to America.” At that time, it was very dangerous and difficult for African-Americans to travel because black travelers couldn’t eat, sleep, or buy gas at most white-owned businesses. The Green Book listed hotels, restaurants, gas stations, and other businesses that were safe for black travelers. It was a resourceful and innovative solution to a horrific problem. It took courage to be listed in the Green Book, and Overground Railroad celebrates the stories of those who put their names in the book and stood up against segregation. It shows the history of the Green Book, how we arrived at our present historical moment, and how far we still have to go when it comes to race relations in America."
     },
     {
       "id": 14,
-      "categoryId": 4,
-      "title": "Product 14",
-      "author": "Authors_name",
-      "imageUrl": "https://picsum.photos/400?image=739",
+      "categoryId": 2,
+      "title": "The Missing American",
+      "author": "Kwei Quartey",
+      "imageUrl": "https://s.s-bol.com/imgbase0/imagebase3/large/FC/0/3/0/2/9200000109542030.jpg",
       "inStock": false,
-      "price": "1454"
+      "price": "26,99",
+      "resume": "Accra private investigator Emma Djan's first missing persons case will lead her to the darkest depths of the email scams and fetish priests in Ghana, the world's Internet capital.When her dreams of rising through the Accra police ranks like her late father crash around her, 26-year-old Emma Djan is unsure what will become of her career. Through a sympathetic former colleague, Emma gets an interview with a private detective agency that takes on cases of missing persons, theft, and infidelity. It's not the future she imagined, but it's herbest option.Meanwhile, Gordon Tilson, a middle-aged widower in Washington, DC, has found solace in an online community after his wife's passing. Through the support group, he's even met a young Ghanaian widow he's come to care about. When her sister gets into a car accident, he sends her thousands of dollars to cover the hospital bill—to the horror of his only son, Derek. Then Gordon decides to surprise his new love by paying her a visit—and disappears. Fearing for his father's life, Derek follows him across the world to Ghana, Internet capital of the world, where he and Emma will find themselves deep in a world of sakawa scams, fetish priests, and those willing to kill to protect their secrets."
     },
     {
       "id": 15,
-      "categoryId": 4,
-      "title": "Product 15",
-      "author": "Authors_name",
-      "imageUrl": "https://picsum.photos/400?image=901",
+      "categoryId": 2,
+      "title": "How Quickly She Disappears",
+      "author": "Raymond Fleischmann",
+      "imageUrl": "https://s.s-bol.com/imgbase0/imagebase3/large/FC/9/8/8/7/9200000110187889.jpg",
       "inStock": false,
-      "price": "1368"
+      "price": "23,99",
+      "resume": "It's been twenty years since Elisabeth&;s twin sister, Jacqueline, disappeared without a trace. Now thirty-year-old Elisabeth is living far from home in a small Alaskan town. She's in a loveless marriage and has a precocious young daughter she loves more than anything but who reminds her too much of her long-missing sister. But then Alfred, a dangerous stranger with a plan of his own, arrives in town and commits an inexplicable act of violence. And he offers a startling revelation: He knows exactly what happened to Elisabeth's sister, but he'll reveal this truth only if she fulfills his three requests.Increasingly isolated from her neighbors and imprisoned by the bitter cold and her own obsession, Elisabeth can almost hear her sister's voice saying, Come and find me. And so she will, even if it means putting herself&;and her family&;in danger."
     },
     {
       "id": 16,
       "categoryId": 3,
-      "title": "Product 16",
-      "author": "Authors_name",
-      "imageUrl": "https://picsum.photos/400?image=372",
+      "title": "Pine",
+      "author": "Francine Toon",
+      "imageUrl": "https://s.s-bol.com/imgbase0/imagebase3/large/FC/8/6/0/5/9200000101555068.jpg",
       "inStock": false,
-      "price": "2087"
+      "price": "19,99",
+      "resume": "'It's both eerie and thrilling at once, and had me under its spell until the end.' Sophie Mackintosh, author of The Water Cure They are driving home from the search party when they see her. The trees are coarse and tall in the winter light, standing like men. Lauren and her father Niall live alone in the Highlands, in a small village surrounded by pine forest. When a woman stumbles out onto the road one Halloween night, Niall drives her back to their house in his pickup. In the morning, she's gone. In a community where daughters rebel, men quietly rage, and drinking is a means of forgetting, mysteries like these are not out of the ordinary. The trapper found hanging with the dead animals for two weeks. Locked doors and stone circles. The disappearance of Lauren's mother a decade ago. Lauren looks for answers in her tarot cards, hoping she might one day be able to read her father's turbulent mind. Neighbours know more than they let on, but when local teenager Ann-Marie goes missing it's no longer clear who she can trust. In spare, haunting prose, Francine Toon creates an unshakeable atmosphere of desolation and dread. In a place that feels like the end of the world, she unites the gloom of the modern gothic with the pulse of a thriller. It is the perfect novel for our haunted times."
     },
     {
       "id": 17,
       "categoryId": 1,
-      "title": "Product 17",
-      "author": "Authors_name",
-      "imageUrl": "https://picsum.photos/400?image=264",
+      "title": "Almost Just Friends",
+      "author": "Jill Shalvis",
+      "imageUrl": "https://s.s-bol.com/imgbase0/imagebase3/large/FC/0/9/6/3/9200000109983690.jpg",
       "inStock": true,
-      "price": "2523"
+      "price": "18,99",
+      "resume": "New York Times bestselling author Jill Shalvis returns to Wildstone with the touching story of finding your place in the world—and the people who make it home.Piper Manning's about as tough as they come, she's had to be. She raised her siblings and they've thankfully flown the coop. All she has to do is finish fixing up the lake house her grandparents left her, sell it, and then she's free.When a massive storm hits, she runs into a tall, dark and brooding stranger, Camden Reid. There's a spark there, one that shocks her. Surprising her further, her sister and brother return, each of them holding their own secrets. The smart move would be for Piper to ignore them all but Cam unleashes emotions deep inside of her that she can't deny, making her yearn for something she doesn't understand. And her siblings…well, they need each other.Only when the secrets come out, it changes everything Piper thinks she knows about her family, herself…and Cam. Can she find a way to outrun the demons? The answer is closer than she thinks—just as the new life she craves may have already begun."
     },
     {
       "id": 18,
       "categoryId": 1,
-      "title": "Product 18",
-      "author": "Authors_name",
-      "imageUrl": "https://picsum.photos/400?image=133",
+      "title": "Marriage on Madison Avenue",
+      "author": "Lauren Layne",
+      "imageUrl": "https://s.s-bol.com/imgbase0/imagebase3/large/FC/9/9/7/3/9200000115133799.jpg",
       "inStock": true,
-      "price": "1118"
+      "price": "22,99",
+      "resume": "Can guys and girls ever be just friends? According to Audrey Tate and Clarke West, absolutely. After all, they've been best friends since childhood without a single romantic entanglement. Clarke is the charming playboy Audrey can always count on, and he knows that the ever-loyal Audrey will never not play along with his strategy for dodging his matchmaking mother—announcing he's already engaged…to Audrey. But what starts out as a playful game between two best friends turns into something infinitely more complicated, as just-for-show kisses begin to stir up forbidden feelings. As the faux wedding date looms closer, Audrey and Clarke realize that they can never go back to the way things were, but deep down, do they really want to?"
     },
     {
       "id": 19,
       "categoryId": 2,
-      "title": "Product 19",
-      "author": "Neil Gaiman",
-      "imageUrl": "https://picsum.photos/400?image=359",
+      "title": "The Empty Bed",
+      "author": "Nina Sadowsky",
+      "imageUrl": "https://s.s-bol.com/imgbase0/imagebase3/large/FC/9/8/2/2/9200000110662289.jpg",
       "inStock": false,
-      "price": "1966"
+      "price": "25,99",
+      "resume": "Eva Lombard is being followed. Or so she suspects...Eva and her husband, Peter, are in Hong Kong on a romantic getaway from London when Peter wakes up in their hotel room to an empty bed, his wife gone without a trace. His worst fears are confirmed: Eva wasn&;t imagining things. Suddenly, he finds himself the number one suspect in his wife&;s disappearance, trapped in a foreign country with no one to turn to. He calls his boss, Forrest &;Holly&; Holcomb, who enlists the help of Catherine, his ex-flame and the enigmatic operator behind the darknet witness-protection program known as the Burial Society.As a favor to Holly, Catherine sends her team of highly trained Society members on a dangerous chase through Hong Kong to find Eva&;while Catherine takes care of pressing business at home. Not only is she tasked with a mission in Mexico City, protecting a family that knows too much from a vengeful pharmaceutical company, but an FBI agent tracking down the missing wife and child of a charismatic businessman is about to come dangerously close to exposing the Society&;s secrets.In these intertwining story lines that converge in unexpected ways, not everyone is who they appear to be&;and not everyone who is lost wants to be found."
     },
     {
       "id": 20,
       "categoryId": 1,
-      "title": "Product 20",
-      "author": "Authors_name",
-      "imageUrl": "https://picsum.photos/400?image=354",
+      "title": "Gabriel's Promise",
+      "author": "Sylvain Reynard",
+      "imageUrl": "https://s.s-bol.com/imgbase0/imagebase3/large/FC/6/2/0/3/9200000107643026.jpg",
       "inStock": false,
-      "price": "2569"
+      "price": "17,99",
+      "resume": "When Gabriel and Julia Emerson first lay eyes on their newborn daughter, Clare, they realize life as they know it will never be the same. Gabriel has vowed to be a good father when he suddenly receives an invitation to give a series of lectures in Edinburgh, Scotland--an opportunity of high prestige—but that would mean leaving his wife and child in Boston. Hesitant to bring it up, he keeps the opportunity from Julia as long as he can, not knowing she has a secret of her own. When a frightening situation arises that threatens their new family, both parents must make sacrifices. With the family in danger, the looming question remains: Will Gabriel pursue his lectureship in Edinburgh, leaving Julia and Clare vulnerable in Boston, or will he abandon the chance of a lifetime in order to ensure his family's safety?"
     }
   ],
   "categories": [
