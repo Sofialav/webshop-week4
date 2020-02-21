@@ -39,13 +39,13 @@ class PreviewProducts extends Component {
           <div className="btn-group" role="group">
             <button
               type="button"
-              className="btn btn-danger disabled"
+              className="btn btn-danger disabled mr-1"
               onClick={() => this.handleAddClick(this.props.prod)}
             >
               Add to Cart
             </button>
             <Link to={`/products/${this.props.id}`}>
-              <button type="button" className="btn disabled">
+              <button type="button" className="btn disabled ml-1">
                 Details
               </button>
             </Link>
