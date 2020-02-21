@@ -116,7 +116,7 @@ class CheckoutPage extends React.Component {
           }}
         />
         {errorMessage && <p>{errorMessage}</p>}
-        {paymentMethod && <p>Got PaymentMethod: {paymentMethod.id}</p>}
+        {paymentMethod && <p>Your order is beeing proccessed</p>}
         <button type="submit" disabled={!stripe}>
           Pay
         </button>
