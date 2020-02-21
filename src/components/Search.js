@@ -30,7 +30,7 @@ class Search extends Component {
             onChange={this.handleChange}
             value={this.state.name}
             name="input"
-            className="form-control r-sm-2"
+            className="form-control my-2 mx-2 r-sm-2"
             type="search"
             placeholder="Search by title"
             aria-label="Search"
