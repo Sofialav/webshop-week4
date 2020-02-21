@@ -6,7 +6,6 @@ import "./Navbar.css";
 class Navbar extends Component {
   render() {
     const QtyPerItem = this.props.cartItems.map(prod => prod.qty);
-    console.log(QtyPerItem);
     const NumberOfItems = QtyPerItem.reduce((acc, prod) => acc + prod, 0);
 
     return (
