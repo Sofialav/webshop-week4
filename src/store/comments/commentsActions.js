@@ -12,3 +12,10 @@ export function setComment(comments) {
     payload: comments
   };
 }
+
+export function getCommentsByProduct(productId) {
+  return {
+    type: "COMMENTS_BY_BOOK",
+    payload: parseInt(productId)
+  };
+}

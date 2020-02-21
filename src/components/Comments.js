@@ -7,8 +7,8 @@ class Comments extends Component {
     return (
       <div>
         <div className="media-body">
-          <h3>User</h3>
-          <p>Comment</p>
+          <h3>{this.props.user} says:</h3>
+          <p>{this.props.comment}</p>
         </div>
       </div>
     );
@@ -16,6 +16,6 @@ class Comments extends Component {
 }
 
 function mapStateToProps(reduxState) {
-  return { comment: reduxState.comments };
+  return {};
 }
 export default connect(mapStateToProps)(Comments);
