@@ -14,12 +14,12 @@ class ProductDetails extends Component {
   render() {
     return (
       <div>
-        Book details
-        <div key={this.props.products.id} className="prodPreview">
+        <div key={this.props.products.id} className="media">
           <img src={this.props.products.imageUrl} className="mr-3" alt="" />
-          <h3>{this.props.products.title}</h3>
-          <p>{this.props.products.author}</p>
-          <div className="btn-group" role="group">
+          <div className="media-body">
+            <h3>{this.props.products.title}</h3>
+            <p>{this.props.products.author}</p>
+            <p>{this.props.products.resume}</p>
             <button
               type="button"
               className="btn btn-danger disabled"
@@ -35,7 +35,7 @@ class ProductDetails extends Component {
 }
 
 function mapStateToProps(reduxState) {
-  return { products: reduxState.products.products };
+  return { products: reduxState.products.resume };
 }
 
 export default connect(mapStateToProps)(ProductDetails);
