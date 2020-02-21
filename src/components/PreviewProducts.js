@@ -27,9 +27,7 @@ class PreviewProducts extends Component {
             >
               Add to Cart
             </button>
-            {/* temporary linked to card
-                      change later!!! */}
-            <Link to={`/cart`}>
+            <Link to={`/products/${this.props.id}`}>
               <button type="button" className="btn btn-warning disabled">
                 Details
               </button>

@@ -17,6 +17,7 @@ class AllProducts extends Component {
           title={prod.title}
           author={prod.author}
           prod={prod}
+          id={prod.id}
         />
       );
     });

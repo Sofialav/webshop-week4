@@ -14,6 +14,14 @@ export default function productsReducer(state = initialState, action) {
         return state;
       }
     }
+    case "DISPLAY_PRODUCT": {
+      const details = state.products.find(obj => obj.id === action.payload.id);
+      if (details) {
+        return { ...state, products: details };
+      } else {
+        return state;
+      }
+    }
     default:
       return state;
   }
